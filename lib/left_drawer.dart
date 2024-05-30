@@ -28,12 +28,7 @@ class LeftDrawer extends StatelessWidget {
                 color: Color.fromARGB(255, 209, 12, 12),
               ),
             ],
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage('assets/Screenshot.png'),
-                fit: BoxFit.cover,
-              ),
-            ),
+
           ),
           MenuListTileWidget(),
         ],

@@ -1,6 +1,8 @@
 import 'package:commonwd/Anniversaries.dart';
 import 'package:commonwd/Contacts.dart';
 import 'package:commonwd/birthday.dart';
+import 'package:commonwd/counter.dart';
+import 'package:commonwd/todo_list.dart';
 import 'package:flutter/material.dart';
 import 'holidays.dart'; // Import the Holidays widget
 
@@ -53,6 +55,23 @@ class MenuListTileWidget extends StatelessWidget {
           Navigator.pop(context);
           Navigator.push(context,
               MaterialPageRoute(builder: (context) => const Contacts()));
+        },
+      ),
+      ListTile(
+          leading: const Icon(Icons.add),
+          title: const Text('Counter'),
+          onTap: () {
+            Navigator.pop(context);
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => const CounterApp()));
+          }),
+      ListTile(
+        leading: const Icon(Icons.list),
+        title: const Text('To-Do List App'),
+        onTap: () {
+          Navigator.pop(context);
+          Navigator.push(context,
+              MaterialPageRoute(builder: (context) => const TodoListApp()));
         },
       ),
       const Divider(
