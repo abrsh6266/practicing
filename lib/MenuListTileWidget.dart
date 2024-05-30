@@ -2,6 +2,7 @@ import 'package:commonwd/Anniversaries.dart';
 import 'package:commonwd/Contacts.dart';
 import 'package:commonwd/birthday.dart';
 import 'package:commonwd/counter.dart';
+import 'package:commonwd/login.dart';
 import 'package:commonwd/todo_list.dart';
 import 'package:flutter/material.dart';
 import 'holidays.dart'; // Import the Holidays widget
@@ -19,6 +20,17 @@ class MenuListTileWidget extends StatelessWidget {
           Navigator.pop(context);
           Navigator.push(context,
               MaterialPageRoute(builder: (context) => const Birthdays()));
+        },
+      ),
+      ListTile(
+        leading: const Icon(Icons.login),
+        title: const Text('Login'),
+        onTap: () {
+          Navigator.pop(context);
+          Navigator.push(
+              context,
+              MaterialPageRoute(
+                  builder: (context) => const LoginPage(title: 'Login page')));
         },
       ),
       ListTile(

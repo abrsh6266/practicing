@@ -7,13 +7,17 @@ class Birthdays extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Birthdays'),
+        title: const Text(
+          'Birthdays',
+          style: TextStyle(
+              color: Colors.amber, fontSize: BorderSide.strokeAlignInside),
+        ),
       ),
       body: const Center(
         child: Icon(
-          Icons.cake,
-          size: 150.0,
-          color: Colors.red,
+          Icons.access_alarm,
+          color: Colors.amber,
+          size: 350.0,
         ),
       ),
     );
