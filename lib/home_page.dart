@@ -10,7 +10,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  final List<String> _items = [];x1
+  final List<String> _items = [];
   final TextEditingController _textEditingController = TextEditingController();
 
   void _addItem() {
