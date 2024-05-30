@@ -1,5 +1,5 @@
 // main.dart
-import 'package:commonwd/Holidays.dart';
+import 'package:commonwd/Home.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Holidays(),
+      home: Home(),
     );
   }
 }

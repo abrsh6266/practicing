@@ -6,12 +6,14 @@ class Anniversaries extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('my first app')),
+      appBar: AppBar(
+        title: const Text('Anniversaries'),
+      ),
       body: const Center(
         child: Icon(
-          Icons.cake,
+          Icons.favorite,
           size: 150.0,
-          color: Color.fromARGB(255, 20, 226, 13),
+          color: Colors.pink,
         ),
       ),
     );
