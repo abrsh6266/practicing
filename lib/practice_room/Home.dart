@@ -13,11 +13,17 @@ class _MyHomePageState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Drawer Demo'),
+        title: const Text('Home Page'),
       ),
       drawer: const LeftDrawer(),
-      body: SafeArea(
-        child: Container(),
+      body: const SafeArea(
+        child: Column(
+          children: [
+            ListTile(
+              title: Text('Name'),
+            )
+          ],
+        ),
       ),
     );
   }
