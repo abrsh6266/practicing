@@ -1,3 +1,4 @@
+import 'package:commonwd/navigation.dart';
 import 'package:flutter/material.dart';
 
 class LeftDrawer extends StatelessWidget {
@@ -37,7 +38,10 @@ class LeftDrawer extends StatelessWidget {
               Navigator.pop(context);
             },
           ),
-          
+          const Divider(
+            color: Colors.green,
+          ),
+          const NavigationApp()
         ],
       ),
     );
