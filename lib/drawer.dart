@@ -41,7 +41,7 @@ class LeftDrawer extends StatelessWidget {
           const Divider(
             color: Colors.amber,
           ),
-          const NavigationApp()
+          NavigationApp()
         ],
       ),
     );

@@ -15,7 +15,7 @@ class _HomePageState extends State<HomePage> {
 
   void _addItem() {
     if (_textEditingController.text.isNotEmpty) {
-      setState(() {
+      setState(()   {
         _items.add(_textEditingController.text);
       });
       _textEditingController.clear();
